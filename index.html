@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    </head>
+
+    <body>
+        <div class="slide-container">
+           
+
+            <div class="wrapper">
+                <div class="clash-card hendrew">
+                    <div class="clash-card__image clash-card__image--hendrew centered-image">
+                        <img src="images/hendre rem.png" alt="hendrew fut"/>
+                    </div>  
+                    <div class="clash-card__level clash-card__level--hendrew">Camiseta 13</div>
+                    <div class="clash-card__unit-name">The Drew</div>
+                    <div class="clash-card__unit-description">
+                        Drew (velho da lancha), com seus dribles pela ala direita auxiliando o time e errando vários gols.
+                    </div>
+
+                    <div class="clash-card__unit-stats clash-card__unit-stats--hendrew clearfix">
+                        <div class="one-third">
+                            <div class="stat">20<sup>M</sup></div>
+                            <div class="stat-value">Aquecimento</div>
+                        </div>
+
+                        <div class="one-third">
+                            <div class="stat">87</div>
+                            <div class="stat-value">Velocidade</div>
+                        </div>
+
+                        <div class="one-third no-border">
+                            <div class="stat">25<sup>M</sup></div>
+                            <div class="stat-value">Duração</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--
+            <div class="wrapper">
+                <div class="clash-card uniao">
+                    <div class="clash-card__image clash-card__image--uniao centered-image">
+                        <img src="images/uni.png" alt="União Oliveira"/>
+                    </div>  
+                    <div class="clash-card__level clash-card__level--hendrew">Primeira Divisão</div>
+                    <div class="clash-card__unit-name">União Oliveira</div>
+                    <div class="clash-card__unit-description">
+                        União Oliveira, time da Primeira Disivão de Futsal de Formosa-Goiás.
+                    </div>
+
+                    <div class="clash-card__unit-stats clash-card__unit-stats--uniao clearfix">
+                        <div class="one-third">
+                            <div class="stat">20<sup>M</sup></div>
+                            <div class="stat-value">Aquecimento</div>
+                        </div>
+
+                        <div class="one-third">
+                            <div class="stat">87</div>
+                            <div class="stat-value">Velocidade</div>
+                        </div>
+
+                        <div class="one-third no-border">
+                            <div class="stat">25<sup>M</sup></div>
+                            <div class="stat-value">Duração</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             //-->
+
+            
+        </div>
+
+        <script>
+            (function () {
+                var slideContainer = $(".slide-container");
+
+                slideContainer.slick();
+
+                $(".clash-card__image img").hide();
+                $(".slick-active").find(".clash-card img").fadeIn(200);
+
+                slideContainer.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
+                    $(".slick-active").find(".clash-card img").fadeOut(1000);
+                });
+
+                slideContainer.on("afterChange", function (event, slick, currentSlide) {
+                    $(".slick-active").find(".clash-card img").fadeIn(100);
+                });
+            })();
+        </script>
+    </body>
+</html>
