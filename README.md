@@ -4,3 +4,8 @@ Cards feitos para meu time de Futsal amador
 
 ## Tecnologias Utilizadas:
 
+- HTML
+- CSS
+- JavaScript
+- Git and Github
+
